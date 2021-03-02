@@ -23,8 +23,8 @@
   - For regular images displayed on the product main page
   ```JSON
   {
-    regular: [
-      'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=xxs',
+    "regular": [
+      "https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=xxs',
       'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0452609_ph133274_s5.jpg?f=xxs',
       'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0735708_pe740106_s5.jpg?f=xxs'
     ]
@@ -34,8 +34,8 @@
   - For large images when the user clicks on the image on the produce size
   ```JSON
     {
-     large: [
-       'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=s',
+     "large": [
+       "https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=s',
        'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0452609_ph133274_s5.jpg?f=s',
        'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0735708_pe740106_s5.jpg?f=s'
      ],
@@ -48,16 +48,16 @@
     - These other colors are actual products (different price, name)
   ```JSON
     {
-      colors: [ 1, 2, 3 ]
+      "colors": [ 1, 2, 3 ]
     }
   ```
 
   - For hand-drawn-style images of the product-size service if any
   ```JSON
     {
-      handDrawns: [
-        'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0722637_pe733678_s5.jpg?f=xxs'
-      ],
+      "handDrawns": [
+        "https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0722637_pe733678_s5.jpg?f=xxs'
+      ]
     }
   ```
 
@@ -67,8 +67,8 @@
     * "More from product series"
     ```JSON
       {
-        largeThumbnails: [
-          'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=xxxs',
+        "largeThumbnails": [
+          "https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=xxxs',
           'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0452609_ph133274_s5.jpg?f=xxxs'
         ],
       }
@@ -77,8 +77,8 @@
   - For medium thumbnail images used on:
     * "Similar Products"
     ```JSON
-      mediumThumbnails: [
-        'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=u',
+      "mediumThumbnails": [
+        "https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=u',
         'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0452609_ph133274_s5.jpg?f=u'
       ],
     ```
@@ -87,8 +87,8 @@
     * "Colors" under "About" section
     ```JSON
       {
-        smallThumbnails: [
-          'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=xu',
+        "smallThumbnails": [
+          "https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=xu',
           'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-gray-stained__0780033_pe759757_s5.jpg?f=xu',
           'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-white__0636233_pe697745_s5.jpg?f=xu',
           'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-white-stained-oak-veneer__0636234_pe697749_s5.jpg?f=xu'
