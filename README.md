@@ -20,7 +20,8 @@
 > Basic Usage & Sample JSONs
 > Examples are based on: https://www.ikea.com/us/en/p/malm-underbed-storage-box-for-high-bed-black-brown-60252721/
 
-  - For regular images displayed on the product main page
+  - For regular images displayed on the product main page.
+    -> GET api/images/rg/:productId
   ```JSON
   {
     "regular": [
@@ -32,6 +33,7 @@
   ```
 
   - For large images when the user clicks on the image on the produce size
+    -> GET api/images/lg/:productId
   ```JSON
     {
      "large": [
@@ -44,6 +46,7 @@
 
 
   - For ids of other colors images of the current product
+    -> GET api/images/colors/:productId
     - These ids will be used to make API requests for other colors
     - These other colors are actual products (different price, name)
   ```JSON
@@ -53,6 +56,7 @@
   ```
 
   - For hand-drawn-style images of the product-size service if any
+    -> GET api/images/hand/:productId
   ```JSON
     {
       "handDrawns": [
@@ -62,6 +66,7 @@
   ```
 
   - For large thumbnail images used on:
+    -> GET api/images/thumnail/lg/:productId
     * "Other also viewed"
     * "Goes well with"
     * "More from product series"
@@ -75,6 +80,7 @@
     ```
 
   - For medium thumbnail images used on:
+    -> GET api/images/thumnail/med/:productId
     * "Similar Products"
     ```JSON
       "mediumThumbnails": [
@@ -84,6 +90,7 @@
     ```
 
   - For small thumbnail images used on:
+    -> GET api/images/thumnail/sm/:productId
     * "Colors" under "About" section
     ```JSON
       {
