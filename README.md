@@ -21,7 +21,7 @@
 > Examples are based on: https://www.ikea.com/us/en/p/malm-underbed-storage-box-for-high-bed-black-brown-60252721/
 
   - For regular images displayed on the product main page.
-    -> GET api/images/rg/:productId
+    -> GET api/images/default/rg/:productId
   ```JSON
   {
     "regular": [
@@ -33,7 +33,7 @@
   ```
 
   - For large images when the user clicks on the image on the produce size
-    -> GET api/images/lg/:productId
+    -> GET api/images/default/lg/:productId
   ```JSON
     {
      "large": [
