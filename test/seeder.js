@@ -70,7 +70,7 @@ describe('Seed Data', () => {
     seedData()
       .then((seededData) => {
         let thirdProduct = seedData[2];
-        let image = thirdProduct.large[3];
+        let image = thirdProduct.largeThumbnails[3];
         expect(thirdProduct.largeThumbnails).to.be.an('array');
         expect(image).to.be.a('string');
       });
@@ -80,7 +80,7 @@ describe('Seed Data', () => {
     seedData()
       .then((seededData) => {
         let secondProduct = seedData[1];
-        let image = secondProduct.large[2];
+        let image = secondProduct.mediumThumbnails[2];
         expect(secondProduct.mediumThumbnails).to.be.an('array');
         expect(image).to.be.a('string');
       });

@@ -75,8 +75,5 @@ const seedData = (cb) => {
     .catch((err) => cb(err, null));
 };
 
-// seedData();
-
-
 
 module.exports = Promise.promisify(seedData);
