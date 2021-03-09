@@ -25,23 +25,24 @@
   ```JSON
   {
     "regular": [
-      "https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=xxs',
-      'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0452609_ph133274_s5.jpg?f=xxs',
-      'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0735708_pe740106_s5.jpg?f=xxs'
-    ]
+      "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723091_pe733853_s5.jpg?f=xxs",
+      "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723093_pe733855_s5.jpg?f=xxs",
+      "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723092_pe733856_s5.jpg?f=xxs"
+    ],
   }
   ```
 
   - For large images when the user clicks on the image on the produce size
     -> GET api/images/default/lg/:productId
   ```JSON
-    {
-     "large": [
-       "https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=s',
-       'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0452609_ph133274_s5.jpg?f=s',
-       'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0735708_pe740106_s5.jpg?f=s'
-     ],
-    }
+  {
+    "large": [
+      "https://www.ikea.com/us/en/images/products/aina-cushion-cover-beige__0569582_pe665973_s5.jpg?f=s",
+      "https://www.ikea.com/us/en/images/products/aina-cushion-cover-beige__0569583_pe665975_s5.jpg?f=s",
+      "https://www.ikea.com/us/en/images/products/aina-cushion-cover-beige__0889590_pe672869_s5.jpg?f=s",
+      "https://www.ikea.com/us/en/images/products/aina-cushion-cover-beige__0889588_pe665974_s5.jpg?f=s"
+    ],
+  }
   ```
 
   - For tiny images used on:
@@ -50,10 +51,8 @@
     ```JSON
       {
         "colors": [
-          "https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=xu',
-          'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-gray-stained__0780033_pe759757_s5.jpg?f=xu',
-          'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-white__0636233_pe697745_s5.jpg?f=xu',
-          'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-white-stained-oak-veneer__0636234_pe697749_s5.jpg?f=xu'
+          "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723091_pe733853_s5.jpg?f=xu",
+          "https://www.ikea.com/us/en/images/products/koelax-bedspread-gray__0723085_pe733849_s5.jpg?f=xu"
         ],
       }
     ```
@@ -63,7 +62,7 @@
   ```JSON
     {
       "sizeService": [
-        "https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0722637_pe733678_s5.jpg?f=xxs'
+         "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723091_pe733853_s5.jpg?f=xs"
       ]
     }
   ```
@@ -76,8 +75,8 @@
     ```JSON
       {
         "largeThumbnails": [
-          "https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=xxxs',
-          'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0452609_ph133274_s5.jpg?f=xxxs'
+          "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723091_pe733853_s5.jpg?f=xxxs",
+          "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723092_pe733856_s5.jpg?f=xxxs"
         ],
       }
     ```
@@ -88,8 +87,8 @@
     ```JSON
     {
       "mediumThumbnails": [
-        "https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0636236_pe697747_s5.jpg?f=u',
-        'https://www.ikea.com/us/en/images/products/malm-underbed-storage-box-for-high-bed-black-brown__0452609_ph133274_s5.jpg?f=u'
+        "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723091_pe733853_s5.jpg?f=u",
+        "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723092_pe733856_s5.jpg?f=u"
       ],
     }
     ```
