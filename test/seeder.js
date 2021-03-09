@@ -32,6 +32,7 @@ describe('Seed Data', () => {
           let image = product.large[0];
           expect(product.large).to.be.an('array');
           expect(image).to.be.a('string');
+          expect(image).to.have.string('f=s');
         });
         done();
       });
@@ -44,6 +45,7 @@ describe('Seed Data', () => {
           let image = product.regular[0];
           expect(product.regular).to.be.an('array');
           expect(image).to.be.a('string');
+          expect(image).to.have.string('f=xxs');
         });
         done();
       });
@@ -56,9 +58,9 @@ describe('Seed Data', () => {
           let image = product.colors[0];
           expect(product.colors).to.be.an('array');
 
-          product.colors.length > 0 ?
-            expect(image).to.be.a('string') :
-            expect(image).to.be.undefined;
+          product.colors.length === 0 ?
+            expect(image).to.be.undefined :
+            expect(image).to.be.a('string') && expect(image).to.have.string('f=xu');
         });
         done();
       });
@@ -71,6 +73,7 @@ describe('Seed Data', () => {
           let image = product.sizeService[0];
           expect(product.sizeService).to.be.an('array');
           expect(image).to.be.a('string');
+          expect(image).to.have.string('f=xs');
         });
         done();
       });
@@ -84,6 +87,7 @@ describe('Seed Data', () => {
           let image = product.largeThumbnails[0];
           expect(product.largeThumbnails).to.be.an('array');
           expect(image).to.be.a('string');
+          expect(image).to.have.string('f=xxxs');
         });
         done();
       });
@@ -96,6 +100,7 @@ describe('Seed Data', () => {
           let image = product.mediumThumbnails[0];
           expect(product.mediumThumbnails).to.be.an('array');
           expect(image).to.be.a('string');
+          expect(image).to.have.string('f=u');
         });
         done();
       });
