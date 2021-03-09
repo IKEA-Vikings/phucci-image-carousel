@@ -27,7 +27,7 @@ describe('Seed Data', () => {
     seedData()
       .then((seededData) => {
         seededData.map((product) => {
-          let image = firstProduct.large[0];
+          let image = prouct.large[0];
           expect(product.large).to.be.an('array');
           expect(image).to.be.a('string');
         });
@@ -38,7 +38,7 @@ describe('Seed Data', () => {
     seedData()
       .then((seededData) => {
         seededData.map((product) => {
-          let image = firstProduct.regular[0];
+          let image = prouct.regular[0];
           expect(product.regular).to.be.an('array');
           expect(image).to.be.a('string');
         });
@@ -49,7 +49,7 @@ describe('Seed Data', () => {
     seedData()
       .then((seededData) => {
         seededData.map((product) => {
-          let image = firstProduct.colors[0];
+          let image = prouct.colors[0];
           expect(product.colors).to.be.an('array');
           expect(image).to.be.a('string');
         });
@@ -60,7 +60,7 @@ describe('Seed Data', () => {
     seedData()
       .then((seededData) => {
         seededData.map((product) => {
-          let image = firstProduct.sizeService[0];
+          let image = prouct.sizeService[0];
           expect(product.sizeService).to.be.an('array');
           expect(image).to.be.a('string');
         });
@@ -72,7 +72,7 @@ describe('Seed Data', () => {
     seedData()
       .then((seededData) => {
         seededData.map((product) => {
-          let image = firstProduct.largeThumbnails[0];
+          let image = prouct.largeThumbnails[0];
           expect(product.largeThumbnails).to.be.an('array');
           expect(image).to.be.a('string');
         });
@@ -83,7 +83,7 @@ describe('Seed Data', () => {
     seedData()
       .then((seededData) => {
         seededData.map((product) => {
-          let image = firstProduct.mediumThumbnails[0];
+          let image = prouct.mediumThumbnails[0];
           expect(product.mediumThumbnails).to.be.an('array');
           expect(image).to.be.a('string');
         });
