@@ -96,3 +96,4 @@ var getMediumThumbnails = (productId) => {
 
 
 module.exports.Image = Image;
+module.exports.mongoose = mongoose;

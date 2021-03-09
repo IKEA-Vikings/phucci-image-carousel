@@ -1,5 +1,6 @@
 const images = require('./rawData/index');
 const ImageModel = require('./../database/index').Image;
+const Promise = require('bluebird');
 
 const hasCondition = (url, type) => {
   switch (type) {
@@ -68,16 +69,14 @@ const filterData = () => Object.keys(images).map((itemType) =>
   images[itemType].reduce((filteredData, item) =>
     generateData(productId += 1, item.urls, item.colorUrls), []));
 
-const seedData = () => {
+const seedData = (cb) => {
   ImageModel.insertMany(filterData())
-    .then((seededData) => {
-      console.log('seededData = ', seededData);
-    })
-    .catch((err) => {
-      console.log('INSERTING DATA ERRROR = ', err);
-    });
+    .then((seededData) => cb(null, seededData))
+    .catch((err) => cb(err, null));
 };
 
-seedData();
+// seedData();
 
 
+
+module.exports = Promise.promisify(seedData);
