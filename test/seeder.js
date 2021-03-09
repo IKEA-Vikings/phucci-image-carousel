@@ -1,7 +1,6 @@
 const expect = require('chai').expect;
 const seedData = require('./../server/seeding-script/seeder');
 const mongoose = require('./../server/database/index').mongoose;
-console.log('seedData = ', seedData);
 
 describe('Seed Data', () => {
 
@@ -20,48 +19,51 @@ describe('Seed Data', () => {
   it('each product in the collection should be an object', () => {
     seedData()
       .then((seededData) => {
-        let firstProduct = seedData[0];
-        expect(firstProduct).to.be.an('object');
+        seededData.map((product) => expect(product).to.be.an('object'));
       });
   });
 
   it('each product should have a collection of large images', () => {
     seedData()
       .then((seededData) => {
-        let firstProduct = seedData[0];
-        let image = firstProduct.large[0];
-        expect(firstProduct.large).to.be.an('array');
-        expect(image).to.be.a('string');
+        seededData.map((product) => {
+          let image = firstProduct.large[0];
+          expect(product.large).to.be.an('array');
+          expect(image).to.be.a('string');
+        });
       });
   });
 
   it('each product should have a collection of regular images', () => {
     seedData()
       .then((seededData) => {
-        let thirdProduct = seedData[2];
-        let image = thirdProduct.large[1];
-        expect(thirdProduct.regular).to.be.an('array');
-        expect(image).to.be.a('string');
+        seededData.map((product) => {
+          let image = firstProduct.regular[0];
+          expect(product.regular).to.be.an('array');
+          expect(image).to.be.a('string');
+        });
       });
   });
 
   it('each product should have a collection of colors images', () => {
     seedData()
       .then((seededData) => {
-        let secondProduct = seedData[1];
-        let image = secondProduct.large[3];
-        expect(secondProduct.colors).to.be.an('array');
-        expect(image).to.be.a('string');
+        seededData.map((product) => {
+          let image = firstProduct.colors[0];
+          expect(product.colors).to.be.an('array');
+          expect(image).to.be.a('string');
+        });
       });
   });
 
   it('each product should have a collection of sizeService images', () => {
     seedData()
       .then((seededData) => {
-        let secondProduct = seedData[1];
-        let image = secondProduct.large[1];
-        expect(secondProduct.sizeService).to.be.an('array');
-        expect(image).to.be.a('string');
+        seededData.map((product) => {
+          let image = firstProduct.sizeService[0];
+          expect(product.sizeService).to.be.an('array');
+          expect(image).to.be.a('string');
+        });
       });
   });
 
@@ -69,20 +71,22 @@ describe('Seed Data', () => {
   it('each product should have a collection of largeThumbnails images', () => {
     seedData()
       .then((seededData) => {
-        let thirdProduct = seedData[2];
-        let image = thirdProduct.largeThumbnails[3];
-        expect(thirdProduct.largeThumbnails).to.be.an('array');
-        expect(image).to.be.a('string');
+        seededData.map((product) => {
+          let image = firstProduct.largeThumbnails[0];
+          expect(product.largeThumbnails).to.be.an('array');
+          expect(image).to.be.a('string');
+        });
       });
   });
 
   it('each product should have a collection of mediumThumbnails images', () => {
     seedData()
       .then((seededData) => {
-        let secondProduct = seedData[1];
-        let image = secondProduct.mediumThumbnails[2];
-        expect(secondProduct.mediumThumbnails).to.be.an('array');
-        expect(image).to.be.a('string');
+        seededData.map((product) => {
+          let image = firstProduct.mediumThumbnails[0];
+          expect(product.mediumThumbnails).to.be.an('array');
+          expect(image).to.be.a('string');
+        });
       });
   });
 

@@ -87,13 +87,5 @@ var getMediumThumbnails = (productId) => {
 };
 
 
-// getLarge(0);
-// getRegular(0);
-// getColors(0);
-// getSizeService(0);
-// getLargeThumbnails(0);
-// getMediumThumbnails(0);
-
-
 module.exports.Image = Image;
 module.exports.mongoose = mongoose;
