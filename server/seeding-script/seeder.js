@@ -69,11 +69,10 @@ const filterData = () => Object.keys(images).map((itemType) =>
   images[itemType].reduce((filteredData, item) =>
     generateData(productId += 1, item.urls, item.colorUrls), []));
 
-const seedData = (cb) => {
-  ImageModel.insertMany(filterData())
-    .then((seededData) => cb(null, seededData))
-    .catch((err) => cb(err, null));
-};
+const seedData = (cb) => ImageModel.insertMany(filterData())
+  .then((seededData) => cb(null, seededData))
+  .catch((err) => cb(err, null));
+
 
 
 module.exports = Promise.promisify(seedData);
