@@ -4,6 +4,7 @@ const Promise = require('bluebird');
 
 const hasCondition = (url, type) => {
   switch (type) {
+  case 'original' : return url !== '' && url.indexOf('f=g 1600w') !== -1;
   case 'large': return url !== '' && url.indexOf('f=s 500w') !== -1;
   case 'regular': return url !== '' && url.indexOf('f=xxs 300w') !== -1;
   case 'colors': return url !== '' && url.indexOf('f=xu 40w') !== -1;
@@ -50,10 +51,12 @@ const getLargeUrls = (urls) => getUrls(urls, 'large');
 const getRegularUrls = (urls) => getUrls(urls, 'regular');
 const getColorslUrls = (urls) => getUrls(urls, 'colors');
 
+const getOrginalUrls = (urls) => getUrls(urls, 'original');
 
 const generateData = (id, urls, colorUrls) => {
   return {
     '_id': id,
+    original: getOrginalUrls(urls),
     large: getLargeUrls(urls),
     regular: getRegularUrls(urls),
     colors: getColorslUrls(colorUrls),
@@ -73,6 +76,9 @@ const seedData = (cb) => ImageModel.insertMany(filterData())
   .then((seededData) => cb(null, seededData))
   .catch((err) => cb(err, null));
 
+const seedIfEmpty = () => ImageModel.findOne({})
+  .then((image) => !image ? seedData() : image);
 
 
-module.exports = Promise.promisify(seedData);
+module.exports.seedData = Promise.promisify(seedData);
+module.exports.seedIfEmpty = seedIfEmpty;

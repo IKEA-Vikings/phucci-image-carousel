@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const seedData = require('./../server/seeding-script/seeder');
+const seedData = require('./../server/seeding-script/seeder').seedData;
 const mongoose = require('./../server/database/index').mongoose;
 
 describe('Seed Data', () => {
