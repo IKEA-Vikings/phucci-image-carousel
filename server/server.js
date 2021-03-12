@@ -17,6 +17,11 @@ app.get('/images/org/:id', (req, res) => {
     .then((images) => res.send(images));
 });
 
-app.listen(port, () => {
+
+const server = app.listen(3000, function () {
+  var port = server.address().port;
   console.log(`listenting on port:${port}`);
 });
+
+
+module.exports = server;

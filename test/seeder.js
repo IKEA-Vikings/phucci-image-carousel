@@ -4,7 +4,7 @@ const mongoose = require('./../server/database/index').mongoose;
 
 describe('Seed Data', () => {
 
-  beforeEach(() => {
+  afterEach(() => {
     mongoose.connect('mongodb://localhost/images', () => mongoose.connection.db.dropDatabase());
   });
 
