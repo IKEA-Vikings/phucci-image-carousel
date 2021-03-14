@@ -15,7 +15,7 @@ describe('API Endpoints', () => {
 
       request({
         method: 'GET',
-        uri: `http://127.0.0.1:3000/images/org/${productId}`
+        uri: `http://127.0.0.1:3004/images/org/${productId}`
 
       }, (error, response, body) => {
         if (error) { console.log('CONNECTION ERROR = ', error); }

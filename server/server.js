@@ -1,15 +1,12 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const db = require('./database/index').db;
 const seeder = require('./seeding-script/seeder');
 
 
 const app = express();
-const port = 3000;
+const port = 3004;
 
 app.use(express.static(__dirname + '/../public/'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
 seeder.seedIfEmpty();
 
 app.get('/images/org/:id', (req, res) => {
@@ -18,8 +15,7 @@ app.get('/images/org/:id', (req, res) => {
 });
 
 
-const server = app.listen(3000, function () {
-  var port = server.address().port;
+const server = app.listen(port, function () {
   console.log(`listenting on port:${port}`);
 });
 
