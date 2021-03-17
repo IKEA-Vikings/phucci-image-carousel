@@ -2,7 +2,7 @@ import React from 'react';
 import ImagesRow from './ImagesRow.jsx';
 
 
-const ImagesCarousel = ({images, visibility}) => {
+const ImagesCarousel = ({images, visibility, style}) => {
 
   return (
     <div style={visibility} className='images-carousel'>

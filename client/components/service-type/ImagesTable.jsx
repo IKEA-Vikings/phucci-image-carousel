@@ -1,5 +1,6 @@
 import React from 'react';
 import ImagesRow from './ImagesRow.jsx';
+import ImagesCarousel from './ImagesCarousel.jsx';
 
 
 const ImagesTable = ({images, handleClick}) => {
