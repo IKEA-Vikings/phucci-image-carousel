@@ -113,7 +113,8 @@ class ImageService extends React.Component {
   }
 
   isOutsideCarousel(e) {
-    return e.target.className !== 'carousel-images-container';
+    return e.target.className !== 'carousel-images-container' &&
+      e.target.className !== 'product-image-carousel';
   }
 
   toggleCarousel() {
