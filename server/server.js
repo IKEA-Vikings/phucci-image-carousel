@@ -1,12 +1,12 @@
 const express = require('express');
 const db = require('./database/index').db;
 const seeder = require('./seeding-script/seeder');
+const path = require('path');
 
 
 const app = express();
 const port = 3004;
-
-app.use(express.static(__dirname + '/../public/'));
+app.use(express.static(path.join(__dirname, '/../public')));
 seeder.seedIfEmpty();
 
 app.get('/images/org/:id', (req, res) => {
