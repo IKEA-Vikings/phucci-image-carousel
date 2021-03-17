@@ -97,8 +97,9 @@ class ImageService extends React.Component {
 
   }
 
-  closeCarousel() {
-    if (this.isCarouselOn()) {
+  closeCarousel(e) {
+    if (this.isCarouselOn() && this.isOutsideCarousel(e)) {
+
       this.setState({ carouselVisibility: 'hidden' });
 
       this.animateCarousel('close', (interval) => {
@@ -109,6 +110,10 @@ class ImageService extends React.Component {
         });
       });
     }
+  }
+
+  isOutsideCarousel(e) {
+    return e.target.className !== 'carousel-images-container';
   }
 
   toggleCarousel() {
@@ -145,14 +150,12 @@ class ImageService extends React.Component {
 
 
     return (
-      <div >
+      <div onClick={(e) => this.closeCarousel(e)}>
         <AnimateCarousel visibility={animateState} image={this.state.images[this.state.clickedImg]}/>
         <ImagesCarousel visibility={carouselVisibility} images={this.state.images}/>
-        <div onClick={this.closeCarousel}>
-          {this.state.mobileView ?
-            <ImagesSlider images={this.state.images} /> :
-            <ImagesTable images={this.state.images} handleClick={this.handleClick} />}
-        </div>
+        {this.state.mobileView ?
+          <ImagesSlider images={this.state.images} /> :
+          <ImagesTable images={this.state.images} handleClick={this.handleClick} />}
       </div>
     );
   }
