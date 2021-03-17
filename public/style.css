@@ -1,0 +1,96 @@
+.images-table {
+  position: relative;
+  top: 17vh;
+  left: 12vw;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+}
+.images-row-table {
+  position: relative;
+  width:  100vw;
+  height: 51vh;
+  display: flex;
+  flex-flow: row wrap;
+  overflow:visible;
+}
+.product-image-table {
+  position: relative;
+  margin: 0.8rem;
+  max-height: 100%;
+  max-width: 95%;
+}
+.product-image-container-table {
+  position: relative;
+  flex-flow: row;
+  height: 52vw;
+  width: 51vh;
+  overflow: hidden;
+}
+
+
+.images-row-slide {
+  position: relative;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+}
+.product-image-slide {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+
+
+
+.images-carousel {
+  background: #fff;
+  /* background: rgb(18, 133, 70); */
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  width: 95vw;
+  height: 93vh;
+  left: 2.5vw;
+  z-index: 1000;
+}
+.images-row-carousel {
+  position: relative;
+  top: -42vh;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  margin: 0 auto;
+  max-width: 50%;
+  max-height: 50%;
+}
+div.images-row-carousel::-webkit-scrollbar { display: none; }
+
+.carousel-images-container {
+  position: relative;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+.product-image-carousel {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 20rem;
+  right: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  scroll-snap-align: start;
+}

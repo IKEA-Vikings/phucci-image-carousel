@@ -14,6 +14,8 @@ class ImageService extends React.Component {
     this.state = {
       images: [],
       mobileView: false,
+      carouselVisibility: 'hidden',
+
       clickedImg: null,
     };
 
@@ -28,7 +30,26 @@ class ImageService extends React.Component {
   }
 
   handleClick(id) {
+    if (this.isCarouselOn()) { return this.closeCarousel(); }
     this.setState({ clickedImg: id });
+    this.toggleCarousel();
+  }
+
+
+  closeCarousel() {
+    if (this.isCarouselOn()) {
+      this.setState({ carouselVisibility: 'hidden' });
+    }
+  }
+
+  toggleCarousel() {
+    this.state.carouselVisibility === 'visible' ?
+      this.setState({ carouselVisibility: 'hidden' }) :
+      this.setState({ carouselVisibility: 'visible' });
+  }
+
+  isCarouselOn() {
+    return this.state.carouselVisibility === 'visible';
   }
 
 
@@ -46,6 +67,7 @@ class ImageService extends React.Component {
   render() {
     return (
       <div >
+        <ImagesCarousel visibility={carouselVisibility} images={this.state.images}/>
         <div>
           {this.state.mobileView ?
             <ImagesSlider images={this.state.images} /> :
