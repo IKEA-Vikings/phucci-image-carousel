@@ -49,7 +49,7 @@
 
 
 .images-carousel {
-  background: #fff;
+  background: rgb(255, 255, 255);
   /* background: rgb(18, 133, 70); */
   position: absolute;
   justify-content: center;

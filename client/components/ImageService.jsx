@@ -146,6 +146,7 @@ class ImageService extends React.Component {
       width: `${this.state.animateWidth}vw`,
       height: `${this.state.animateWidth}vh`,
       zIndex: 1000,
+      background: 'rgb(255, 255, 255)',
     };
 
 
