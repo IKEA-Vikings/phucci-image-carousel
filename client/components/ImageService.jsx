@@ -37,12 +37,6 @@ class ImageService extends React.Component {
     request.getOrgImages(0, (images) => this.setState({ images: images }));
     window.addEventListener('resize', this.handleResize.bind(this));
     this.isMobileOffset() ? this.setState({ mobileView: true }) : null;
-    let carousel = $('.images-carousel')[0].getBoundingClientRect();
-
-    this.setState({
-      carouselWidth: carousel.width,
-      carouselHeight: carousel.height
-    });
   }
 
   handleClick(id) {
@@ -50,7 +44,13 @@ class ImageService extends React.Component {
     if (!this.state.inAnimation) {
       if (this.isCarouselOn()) { return this.closeCarousel(); }
 
-      this.setState({ clickedImg: id });
+      let carousel = $('.images-carousel')[0].getBoundingClientRect();
+
+      this.setState({
+        clickedImg: id,
+        carouselWidth: carousel.width,
+        carouselHeight: carousel.height
+      });
 
       this.animateCarousel('open', (interval) => {
         clearInterval(interval);
