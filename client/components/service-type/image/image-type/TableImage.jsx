@@ -9,5 +9,4 @@ const TableImage = ({url, id, handleClick}) => (
   </a>
 );
 
-
 export default TableImage;

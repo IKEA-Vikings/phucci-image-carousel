@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: path.join(__dirname, 'client/app.jsx'),
+  entry: path.join(__dirname, 'client/index.jsx'),
 
   output: {
-    filename: 'app.js',
+    filename: 'index.js',
     path: path.join(__dirname, '/public')
   },
 
@@ -23,18 +23,26 @@ module.exports = {
       },
 
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         exclude: /node_modules/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-            },
-          },
-        ],
-      }
+        use: ['style-loader', 'css-loader'],
+      },
+
+      // CSS modules config
+      // {
+      //   test: /\.css$/i,
+      //   exclude: /node_modules/,
+      //   use: [
+      //     'style-loader',
+      //     {
+      //       loader: 'css-loader',
+      //       options: {
+      //         modules: true,
+      //       },
+      //     },
+      //   ],
+      // }
     ]
   },
+
 };

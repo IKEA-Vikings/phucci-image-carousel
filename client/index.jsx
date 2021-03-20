@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ImageService from './components/ImageService.jsx';
-
+import './../public/style.css';
 
 
 class App extends React.Component {
@@ -19,4 +19,6 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+// ReactDOM.render(<App/>, document.getElementById('app'));
+window.ImagesService = App;
+
