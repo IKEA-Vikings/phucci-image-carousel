@@ -1,9 +1,12 @@
 import $ from 'jquery';
 
 const request = {
-  getOrgImages: (id, successCb) => {
+  getOrgImages: (successCb) => {
+    let productId = window.location.href.split('/')[3];
+    productId = !productId ? 0 : productId;
+
     $.ajax({
-      url: `http://127.0.0.1:3004/images/org/${id}`,
+      url: `http://127.0.0.1:3004/images/org/${productId}`,
       type: 'GET',
       success: successCb,
       error: () => console.log('Failed to get regular size images for id: ', id)

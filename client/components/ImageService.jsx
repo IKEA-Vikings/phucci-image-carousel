@@ -34,7 +34,7 @@ class ImageService extends React.Component {
   }
 
   componentDidMount() {
-    request.getOrgImages(0, (images) => this.setState({ images: images }));
+    request.getOrgImages((images) => this.setState({ images: images }));
     window.addEventListener('resize', this.handleResize.bind(this));
     this.isMobileOffset() ? this.setState({ mobileView: true }) : null;
   }
