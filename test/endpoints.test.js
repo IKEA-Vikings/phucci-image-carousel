@@ -11,7 +11,7 @@ describe('API Endpoints', () => {
   product that belongs to the productId`, done => {
 
     seeder.seedData((err, data) => {
-      let productId = 0;
+      let productId = 1;
 
       request({
         method: 'GET',

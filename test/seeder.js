@@ -73,7 +73,7 @@ describe('Seed Data', () => {
           let image = product.sizeService[0];
           expect(product.sizeService).to.be.an('array');
           expect(image).to.be.a('string');
-          expect(image).to.have.string('f=xs');
+          expect(image).to.have.string('f=g');
         });
         done();
       });

@@ -8,7 +8,7 @@ const hasCondition = (url, type) => {
   case 'large': return url !== '' && url.indexOf('f=s 500w') !== -1;
   case 'regular': return url !== '' && url.indexOf('f=xxs 300w') !== -1;
   case 'colors': return url !== '' && url.indexOf('f=xu 40w') !== -1;
-  case 'sizeService': return url !== '' && url.indexOf('f=xs 400w') !== -1;
+  case 'sizeService': return url !== '' && url.indexOf('f=g 1600w') !== -1;
   case 'largeThumbnail': return url !== '' && url.indexOf('f=xxxs 160w') !== -1;
   case 'mediumThumbnail': return url !== '' && url.indexOf('f=u 80w') !== -1;
   }

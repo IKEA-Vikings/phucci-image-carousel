@@ -33,6 +33,11 @@ app.get('/images/org/:id', (req, res) => {
     .then((images) => res.send(images));
 });
 
+app.get('/images/sizeService/:id', (req, res) => {
+  db.getSizeService(req.params.id)
+    .then((image) => res.send(image));
+});
+
 
 const server = app.listen(port, function () {
   console.log(`listenting on port:${port}`);
