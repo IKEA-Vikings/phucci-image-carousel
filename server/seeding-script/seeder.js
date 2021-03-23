@@ -66,7 +66,7 @@ const generateData = (id, urls, colorUrls) => {
   };
 };
 
-let productId = -1;
+let productId = 0;
 
 const filterData = () => Object.keys(images).map((itemType) =>
   images[itemType].reduce((filteredData, item) =>
