@@ -19,6 +19,4 @@ class App extends React.Component {
   }
 }
 
-// ReactDOM.render(<App/>, document.getElementById('app'));
-window.ImagesService = App;
-
+ReactDOM.render(<App/>, document.getElementById('image-service'));
