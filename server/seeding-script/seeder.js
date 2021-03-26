@@ -24,7 +24,7 @@ const getThumbnails = (urls, type) => {
     if (currentImg === 0 || currentImg === 2) {
       if (hasCondition(url, type)) {
 
-        thumbnails.push(url.split(' ')[0]);
+        thumbnails.push(url.split(' ')[2]);
         if (currentImg === 2) { return thumbnails; }
       }
     }
@@ -34,12 +34,13 @@ const getThumbnails = (urls, type) => {
 const getUrls = (urls, type) => urls.split('\n').filter((url) =>
   hasCondition(url, type)).map((url) =>
   url.split(' ')).reduce((urls, url) =>
-  [...urls, url[0]], []);
+  [...urls, url[2]], []);
+
 
 const getSizeServiceUrls = (urls) => {
   for (let url of urls.split('\n')) {
     if (hasCondition(url, 'sizeService')) {
-      return [url.split(' ')[0]];
+      return [url.split(' ')[2]];
     }
   }
 };
@@ -68,9 +69,17 @@ const generateData = (id, urls, colorUrls) => {
 
 let productId = 0;
 
-const filterData = () => Object.keys(images).map((itemType) =>
-  images[itemType].reduce((filteredData, item) =>
-    generateData(productId += 1, item.urls, item.colorUrls), []));
+const filterData = () => {
+  let filteredData = [];
+
+  Object.keys(images).forEach((itemType) =>
+    images[itemType].forEach((item) =>
+      filteredData.push(generateData(productId += 1, item.urls, item.colorUrls))));
+
+  console.log('filteredData = ', filteredData);
+  return filteredData;
+};
+
 
 let seedData = (cb) => ImageModel.insertMany(filterData())
   .then((seededData) => cb(null, seededData))

@@ -1,4 +1,4 @@
-const pillows = require('./dataType/pillows');
+const pillows = require('./dataType/cushions');
 const blankets = require('./dataType/blankets');
 const mattresses = require('./dataType/mattresses');
 

@@ -22,7 +22,10 @@ const db = {
   getOriginal: (productId, cb) => {
     Image.find({ '_id': productId })
       .select('original')
-      .then(((images) => cb(null, images[0].original)))
+      .then(((images) => {
+        console.log('images = ', images);
+        cb(null, images[0].original);
+      }))
       .catch((err) => {
         console.log('GETTING ORIGINAL IMAGES ERROR = ', err);
         cb(err, null);
@@ -91,6 +94,12 @@ const db = {
 };
 
 Object.keys(db).map((method) => db[method] = Promise.promisify(db[method]));
+
+// db.getOriginal(1)
+//   .then((images) => {
+//     console.log('images = ', images);
+//   })
+//   .catch((err) => console.log('GETTING ORG IMAGES ERROR = ', err));
 
 module.exports.Image = Image;
 module.exports.mongoose = mongoose;
