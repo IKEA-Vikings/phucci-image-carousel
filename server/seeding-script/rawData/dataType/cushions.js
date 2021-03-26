@@ -950,7 +950,7 @@ const regUrls6 = `
   https://www.ikea.com/us/en/images/products/fjaedrar-inner-cushion-off-white__0889058_pe566804_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls6 = ``;
+const colorUrls6 = '';
 
 const regUrls7 = `
   https://www.ikea.com/us/en/images/products/kransborre-cushion-light-pink__0920477_pe787064_s5.jpg?f=g 1600w,
@@ -1029,7 +1029,7 @@ const regUrls7 = `
   https://www.ikea.com/us/en/images/products/kransborre-cushion-light-pink__1009749_pe827722_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls7 = ``;
+const colorUrls7 = '';
 
 const regUrls8 = `
   https://www.ikea.com/us/en/images/products/sagalovisa-cushion-black-natural__0832412_pe777669_s5.jpg?f=g 1600w,
@@ -1063,7 +1063,7 @@ const regUrls8 = `
   https://www.ikea.com/us/en/images/products/sagalovisa-cushion-black-natural__0832413_pe777670_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls8 = ``;
+const colorUrls8 = '';
 
 const regUrls9 = `
   https://www.ikea.com/us/en/images/products/lurvig-cushion-black-triangle__0758050_pe749498_s5.jpg?f=g 1600w,
@@ -1112,7 +1112,7 @@ const regUrls9 = `
   https://www.ikea.com/us/en/images/products/lurvig-cushion-black-triangle__0758049_pe749499_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls9 = ``;
+const colorUrls9 = '';
 
 const regUrls10 = `
   https://www.ikea.com/us/en/images/products/turill-cushion-white-black__0545087_pe655316_s5.jpg?f=g 1600w,
@@ -1161,7 +1161,7 @@ const regUrls10 = `
   https://www.ikea.com/us/en/images/products/turill-cushion-white-black__0889288_pe655318_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls10 = ``;
+const colorUrls10 = '';
 
 const regUrls11 = `
   https://www.ikea.com/us/en/images/products/froesoen-duvholmen-back-cushion-outdoor-beige__0685036_pe721317_s5.jpg?f=g 1600w,
@@ -1210,7 +1210,7 @@ const regUrls11 = `
   https://www.ikea.com/us/en/images/products/froesoen-duvholmen-back-cushion-outdoor-beige__0905478_pe673603_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls11 = ``;
+const colorUrls11 = '';
 
 const regUrls12 = `
   https://www.ikea.com/us/en/images/products/vigdis-cushion-cover-natural__0747441_pe744544_s5.jpg?f=g 1600w,
@@ -1473,7 +1473,7 @@ const regUrls13 = `
   https://www.ikea.com/us/en/images/products/lurvig-cushion-light-gray__0758027_pe749476_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls13 = ``;
+const colorUrls13 = '';
 
 const regUrls14 = `
   https://www.ikea.com/us/en/images/products/inner-cushion-white__0243163_pe382484_s5.jpg?f=g 1600w,
@@ -1507,7 +1507,7 @@ const regUrls14 = `
   https://www.ikea.com/us/en/images/products/inner-cushion-white__0889795_pe566832_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls14 = ``;
+const colorUrls14 = '';
 
 const regUrls15 = `
   https://www.ikea.com/us/en/images/products/fjaedrar-inner-cushion-white__0243141_pe382468_s5.jpg?f=g 1600w,
@@ -1541,7 +1541,7 @@ const regUrls15 = `
   https://www.ikea.com/us/en/images/products/fjaedrar-inner-cushion-white__0889079_pe566834_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls15 = ``;
+const colorUrls15 = '';
 
 const regUrls16 = `
   https://www.ikea.com/us/en/images/products/gracioes-cushion-velvet-turquoise__0773732_pe756372_s5.jpg?f=g 1600w,
@@ -1605,7 +1605,7 @@ const regUrls16 = `
   https://www.ikea.com/us/en/images/products/gracioes-cushion-velvet-turquoise__0773731_pe756373_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls16 = ``;
+const colorUrls16 = '';
 
 const regUrls17 = `
   https://www.ikea.com/us/en/images/products/svarthoe-cushion-cover-beige__0474483_pe632019_s5.jpg?f=g 1600w,
@@ -1902,7 +1902,7 @@ const regUrls19 = `
   https://www.ikea.com/us/en/images/products/lyktfibbla-cushion-white-black__1010044_pe827855_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls19 = ``;
+const colorUrls19 = '';
 
 const regUrls20 = `
   https://www.ikea.com/us/en/images/products/djupvik-cushion__0731037_pe737941_s5.jpg?f=g 1600w,
@@ -1936,7 +1936,7 @@ const regUrls20 = `
   https://www.ikea.com/us/en/images/products/djupvik-cushion__0152865_pe311145_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls20 = ``;
+const colorUrls20 = '';
 
 const regUrls21 = `
   https://www.ikea.com/us/en/images/products/roedarv-cushion-multicolor__0600167_pe678583_s5.jpg?f=g 1600w,
@@ -2030,7 +2030,7 @@ const regUrls21 = `
   https://www.ikea.com/us/en/images/products/roedarv-cushion-multicolor__0515489_ph138895_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls21 = ``;
+const colorUrls21 = '';
 
 const regUrls22 = `
   https://www.ikea.com/us/en/images/products/sanela-cushion-cover-light-olive-green__0747429_pe744538_s5.jpg?f=g 1600w,
@@ -2282,7 +2282,7 @@ const regUrls24 = `
   https://www.ikea.com/us/en/images/products/lurvig-cushion-white-black__0758046_pe749496_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls24 = ``;
+const colorUrls24 = '';
 
 const regUrls25 = `
   https://www.ikea.com/us/en/images/products/nyhamn-triple-cushion-skiftebo-anthracite__0519002_pe641346_s5.jpg?f=g 1600w,
@@ -2331,7 +2331,7 @@ const regUrls25 = `
   https://www.ikea.com/us/en/images/products/nyhamn-triple-cushion-skiftebo-anthracite__0829694_pe641349_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls25 = ``;
+const colorUrls25 = '';
 
 const regUrls26 = `
   https://www.ikea.com/us/en/images/products/moejlighet-cushion__0629341_pe694298_s5.jpg?f=g 1600w,
@@ -2410,7 +2410,7 @@ const regUrls26 = `
   https://www.ikea.com/us/en/images/products/moejlighet-cushion__0779177_ph161795_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls26 = ``;
+const colorUrls26 = '';
 
 const regUrls27 = `
   https://www.ikea.com/us/en/images/products/duvholmen-inner-pad-for-seat-back-pad-outdoor-off-white__0684485_pe721198_s5.jpg?f=g 1600w,
@@ -2429,7 +2429,7 @@ const regUrls27 = `
   https://www.ikea.com/us/en/images/products/duvholmen-inner-pad-for-seat-back-pad-outdoor-off-white__0684485_pe721198_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls27 = ``;
+const colorUrls27 = '';
 
 const regUrls28 = `
   https://www.ikea.com/us/en/images/products/lurvig-cushion-pink__0758032_pe749480_s5.jpg?f=g 1600w,
@@ -2478,7 +2478,7 @@ const regUrls28 = `
   https://www.ikea.com/us/en/images/products/lurvig-cushion-pink__0758031_pe749481_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls28 = ``;
+const colorUrls28 = '';
 
 const regUrls29 = `
   https://www.ikea.com/us/en/images/products/asveig-cushion-cover-dark-beige__0810752_pe771414_s5.jpg?f=g 1600w,
@@ -2557,7 +2557,7 @@ const regUrls29 = `
   https://www.ikea.com/us/en/images/products/asveig-cushion-cover-dark-beige__1010049_pe827859_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls29 = ``;
+const colorUrls29 = '';
 
 const regUrls30 = `
   https://www.ikea.com/us/en/images/products/duvholmen-inner-seat-pad-outdoor-white__0684479_pe721192_s5.jpg?f=g 1600w,
@@ -2576,7 +2576,7 @@ const regUrls30 = `
   https://www.ikea.com/us/en/images/products/duvholmen-inner-seat-pad-outdoor-white__0684479_pe721192_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls30 = ``;
+const colorUrls30 = '';
 
 const regUrls31 = `
   https://www.ikea.com/us/en/images/products/hannelise-cushion-multicolor__0806431_pe769949_s5.jpg?f=g 1600w,
@@ -2625,7 +2625,7 @@ const regUrls31 = `
   https://www.ikea.com/us/en/images/products/hannelise-cushion-multicolor__0806433_pe769950_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls31 = ``;
+const colorUrls31 = '';
 
 const regUrls32 = `
   https://www.ikea.com/us/en/images/products/fjaedrar-inner-cushion-off-white__0243139_pe382469_s5.jpg?f=g 1600w,
@@ -2659,7 +2659,7 @@ const regUrls32 = `
   https://www.ikea.com/us/en/images/products/fjaedrar-inner-cushion-off-white__0890259_pe566821_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls32 = ``;
+const colorUrls32 = '';
 
 const regUrls33 = `
   https://www.ikea.com/us/en/images/products/ullkaktus-decorate-combination-14__0965192_ph174160_s5.jpg?f=g 1600w,
@@ -2678,7 +2678,7 @@ const regUrls33 = `
   https://www.ikea.com/us/en/images/products/ullkaktus-decorate-combination-14__0965192_ph174160_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls33 = ``;
+const colorUrls33 = '';
 
 const regUrls34 = `
   https://www.ikea.com/us/en/images/products/duvholmen-inner-chair-pad-outdoor-white__0662966_pe713002_s5.jpg?f=g 1600w,
@@ -2697,7 +2697,7 @@ const regUrls34 = `
   https://www.ikea.com/us/en/images/products/duvholmen-inner-chair-pad-outdoor-white__0662966_pe713002_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls34 = ``;
+const colorUrls34 = '';
 
 const regUrls35 = `
   https://www.ikea.com/us/en/images/products/ingalill-cushion-cover-white-dark-gray-stripe__0669375_pe714952_s5.jpg?f=g 1600w,
@@ -2776,7 +2776,7 @@ const regUrls35 = `
   https://www.ikea.com/us/en/images/products/ingalill-cushion-cover-white-dark-gray-stripe__1009519_pe827654_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls35 = ``;
+const colorUrls35 = '';
 
 const regUrls36 = `
   https://www.ikea.com/us/en/images/products/stenmaetare-cushion-cover-multicolor__0810743_pe771405_s5.jpg?f=g 1600w,
@@ -2855,7 +2855,7 @@ const regUrls36 = `
   https://www.ikea.com/us/en/images/products/stenmaetare-cushion-cover-multicolor__1010031_pe827847_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls36 = ``;
+const colorUrls36 = '';
 
 const regUrls37 = `
   https://www.ikea.com/us/en/images/products/gurli-cushion-cover-gray__0214004_pe369631_s5.jpg?f=g 1600w,
@@ -3043,7 +3043,7 @@ const regUrls38 = `
   https://www.ikea.com/us/en/images/products/knipparv-cushion-natural-golden-yellow-stripe__1009479_pe827610_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls38 = ``;
+const colorUrls38 = '';
 
 const regUrls39 = `
   https://www.ikea.com/us/en/images/products/skold-cushion-cover__0385720_pe558382_s5.jpg?f=g 1600w,
@@ -3077,7 +3077,7 @@ const regUrls39 = `
   https://www.ikea.com/us/en/images/products/skold-cushion-cover__0888785_pe618896_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls39 = ``;
+const colorUrls39 = '';
 
 const regUrls40 = `
   https://www.ikea.com/us/en/images/products/kristianne-cushion-cover-white-dark-gray-stripe__0662487_pe711930_s5.jpg?f=g 1600w,
@@ -3156,7 +3156,7 @@ const regUrls40 = `
   https://www.ikea.com/us/en/images/products/kristianne-cushion-cover-white-dark-gray-stripe__0890070_pe711927_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls40 = ``;
+const colorUrls40 = '';
 
 const regUrls41 = `
   https://www.ikea.com/us/en/images/products/alkronmal-cushion-cover-gray-white__0923782_pe788404_s5.jpg?f=g 1600w,
@@ -3205,7 +3205,7 @@ const regUrls41 = `
   https://www.ikea.com/us/en/images/products/alkronmal-cushion-cover-gray-white__0923784_pe788405_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls41 = ``;
+const colorUrls41 = '';
 
 const regUrls42 = `
   https://www.ikea.com/us/en/images/products/sommarbinka-cushion-black-multicolor__0810735_pe771394_s5.jpg?f=g 1600w,
@@ -3254,7 +3254,7 @@ const regUrls42 = `
   https://www.ikea.com/us/en/images/products/sommarbinka-cushion-black-multicolor__1010044_pe827855_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls42 = ``;
+const colorUrls42 = '';
 
 const regUrls43 = `
   https://www.ikea.com/us/en/images/products/skaeggoert-cushion-cover-white-gold-color__0582715_pe670778_s5.jpg?f=g 1600w,
@@ -3333,7 +3333,7 @@ const regUrls43 = `
   https://www.ikea.com/us/en/images/products/skaeggoert-cushion-cover-white-gold-color__0741645_ph152740_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls43 = ``;
+const colorUrls43 = '';
 
 const regUrls44 = `
   https://www.ikea.com/us/en/images/products/stockholm-cushion-black-white__56121_pe161529_s5.jpg?f=g 1600w,
@@ -3397,7 +3397,7 @@ const regUrls44 = `
   https://www.ikea.com/us/en/images/products/stockholm-cushion-black-white__0890306_pe566888_s5.jpg?f=xxu 39w
 `;
 
-const colorUrls44 = ``;
+const colorUrls44 = '';
 
 const regUrls45 = `
   https://www.ikea.com/us/en/images/products/ebbatilda-cushion-cover-rust__0919065_pe786560_s5.jpg?f=g 1600w,
