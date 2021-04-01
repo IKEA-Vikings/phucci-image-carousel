@@ -10,34 +10,34 @@ describe('API Endpoints', () => {
   and recieve back an array of original size images of the
   product that belongs to the productId`, done => {
 
-    seeder.seedData((err, data) => {
-      let productId = 1;
 
-      request({
-        method: 'GET',
-        uri: `http://127.0.0.1:3004/images/org/${productId}`
+    let productId = 1;
 
-      }, (error, response, body) => {
-        if (error) { console.log('CONNECTION ERROR = ', error); }
-        let images = JSON.parse(body);
+    request({
+      method: 'GET',
+      uri: `http://127.0.0.1:3004/images/org/${productId}`
 
-        expect(images).to.be.an('array');
-        expect(images).to.have.lengthOf(4);
+    }, (error, response, body) => {
+      if (error) { console.log('CONNECTION ERROR = ', error); }
+      let images = JSON.parse(body);
 
-        images.map((image) => {
-          expect(image).to.be.a('string');
-          expect(image).to.have.string('f=g');
+      expect(images).to.be.an('array');
+
+      images.map((image) => {
+        let string = 'amazonaws';
+        expect(image).to.be.a('string');
+        expect(image).to.have.string(string);
+      });
+
+      mongoose.connect('mongodb://localhost/images', () => {
+        mongoose.connection.close(() => {
+          server.close(done);
         });
-
-        mongoose.connect('mongodb://localhost/images', () => mongoose.connection.db.dropDatabase(() => {
-          mongoose.connection.close(() => {
-            server.close(done);
-          });
-        }));
-
       });
 
     });
+
+
   });
 
 });

@@ -6,8 +6,12 @@ const cors = require('cors');
 const morgan = require('morgan');
 const corsAccess = require('./middleware/corsAuth');
 
+// const AWS = require('aws-sdk');
+// require('dotenv').config();
+
 const app = express();
 const port = 3004;
+
 
 app.use(express.static(path.join(__dirname, '/../public')));
 app.use(morgan('dev'));
@@ -16,7 +20,6 @@ app.use(cors({
   origin: ['http://localhost:3004', 'http://127.0.0.1:3004'],
   credentials: true
 }));
-
 
 seeder.seedIfEmpty();
 

@@ -1,6 +1,7 @@
 const images = require('./rawData/index');
 const ImageModel = require('./../database/index').Image;
 const Promise = require('bluebird');
+const s3Data = require('./s3Data/index');
 
 const hasCondition = (url, type) => {
   switch (type) {
@@ -29,6 +30,8 @@ const getThumbnails = (urls, type) => {
       }
     }
   }
+
+  return [];
 };
 
 const getUrls = (urls, type) => urls.split('\n').filter((url) =>
@@ -76,20 +79,20 @@ const filterData = () => {
     images[itemType].forEach((item) =>
       filteredData.push(generateData(productId += 1, item.urls, item.colorUrls))));
 
-  console.log('filteredData = ', filteredData);
   return filteredData;
 };
 
-
-let seedData = (cb) => ImageModel.insertMany(filterData())
+let seedData = (cb) => ImageModel.insertMany(s3Data)
   .then((seededData) => cb(null, seededData))
   .catch((err) => cb(err, null));
+
 
 seedData = Promise.promisify(seedData);
 
 const seedIfEmpty = () => ImageModel.findOne({})
-  .then((image) => !image ? seedData() : image);
+  .then((image) => !image ? seedData() : null);
 
 
 module.exports.seedData = seedData;
 module.exports.seedIfEmpty = seedIfEmpty;
+module.exports.filterData = filterData;
