@@ -1,0 +1,12 @@
+version: "2"
+services:
+  images-api:
+    image: images-service
+    ports:
+      - "4005:3004"
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"

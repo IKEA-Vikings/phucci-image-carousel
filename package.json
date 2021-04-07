@@ -27,7 +27,8 @@
   },
   "scripts": {
     "test": "mocha test/seeder.js --exit && jest",
-    "start": "nodemon server/server.js",
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
     "build": "webpack --watch"
   },
   "dependencies": {
