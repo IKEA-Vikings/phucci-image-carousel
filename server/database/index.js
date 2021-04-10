@@ -1,26 +1,12 @@
 const Promise = require('bluebird');
 const mongoose = require('mongoose');
 
-// mongoose.connect('mongodb://localhost/images', () => {
-//   // mongoose.connection.db.dropDatabase();
-// });
-
-// mongoose.connect('mongodb://localhost:27017/images', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
-
 
 mongoose.connect('mongodb://54.67.28.46:27017/images', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
-
-// mongoose.connect('mongodb://mongo:27017/images', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
 
 const ImageSchema = mongoose.Schema({
   _id: Number,
