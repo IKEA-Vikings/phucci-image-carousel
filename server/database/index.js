@@ -10,10 +10,17 @@ const mongoose = require('mongoose');
 //   useUnifiedTopology: true,
 // });
 
-mongoose.connect('mongodb://mongo:27017/images', {
+
+mongoose.connect('mongodb://54.67.28.46:27017:27017/images', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
+
+// mongoose.connect('mongodb://mongo:27017/images', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
 
 const ImageSchema = mongoose.Schema({
   _id: Number,
