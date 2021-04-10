@@ -12,7 +12,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Ikea</h1>
         <ImageService />
       </div>
     );
