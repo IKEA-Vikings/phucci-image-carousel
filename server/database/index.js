@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 // });
 
 
-mongoose.connect('mongodb://54.67.28.46:27017:27017/images', {
+mongoose.connect('mongodb://54.67.28.46:27017/images', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
