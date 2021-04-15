@@ -6,6 +6,8 @@
  */
 
 // "parser": "babel-eslint"
+/* eslint-disable one-var */
+one-var-declaration-per-line: ["error", "initializations"]
 
 module.exports = {
   extends: './node_modules/eslint-config-hackreactor/index.js',

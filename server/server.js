@@ -5,6 +5,7 @@ const path = require('path');
 const cors = require('cors');
 const morgan = require('morgan');
 const corsAccess = require('./middleware/corsAuth');
+const autoSeed = require('./middleware/autoSeed');
 
 const app = express();
 const port = 3004;
@@ -16,6 +17,8 @@ app.use(cors({
   origin: ['http://localhost:3004', 'http://127.0.0.1:3004'],
   credentials: true
 }));
+app.use(autoSeed);
+
 
 seeder.seedIfEmpty();
 
@@ -34,6 +37,12 @@ app.get('/images/org/:id', (req, res) => {
 
 app.get('/images/sizeService/:id', (req, res) => {
   db.getSizeService(req.params.id)
+    .then((image) => res.send(image));
+});
+
+
+app.get('/images/colors/:id', (req, res) => {
+  db.getColors(req.params.id)
     .then((image) => res.send(image));
 });
 

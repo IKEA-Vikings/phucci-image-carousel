@@ -1,8 +1,12 @@
 const Promise = require('bluebird');
 const mongoose = require('mongoose');
 
+// mongoose.connect('mongodb://54.67.28.46:27017/images', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
 
-mongoose.connect('mongodb://54.67.28.46:27017/images', {
+mongoose.connect('mongodb://localhost/images', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -20,6 +24,34 @@ const ImageSchema = mongoose.Schema({
 });
 
 const Image = mongoose.model('Image', ImageSchema);
+
+
+const findSimilarTypeIds = (productId) => {
+  if (productId >= 1 && productId <= 46) { return [1, 46] };
+  if (productId >= 47 && productId <= 77) { return [47, 77] };
+  if (productId >= 78 && productId <= 100) { return [78, 100] };
+};
+
+const generateColorsImages = (productId) => {
+
+  let colorsImages = [];
+  let filteredData = require('./../seeding-script/seeder').filterData();
+  let [min, max] = findSimilarTypeIds(productId);
+
+  let colorsId = Math.floor(Math.random() * (max - min) + min) - 1;
+
+  for (let i = 0; i < 4; i++) {
+    let colorsId = Math.floor(Math.random() * (max - min) + min) - 1;
+    colorsId = (colorsId + i) < max ? colorsId += i : colorsId -= (i - 4);
+
+    let colorImage = filteredData[colorsId].original[0];
+    colorsImages.push(colorImage);
+  }
+
+  colorsImages = colorsImages.map((url) => url.replace('f=g', 'f=xu'));
+
+  return colorsImages;
+};
 
 const db = {
   getOriginal: (productId, cb) => {
@@ -55,7 +87,11 @@ const db = {
   getColors: (productId, cb) => {
     Image.find({ '_id': productId })
       .select('colors')
-      .then(((images) => cb(null, images[0].colors)))
+      .then(((images) => {
+        if (images[0].colors.length > 0) { return cb(null, images[0].colors); }
+        let colorsImages = generateColorsImages(productId);
+        cb(null, colorsImages);
+      }))
       .catch((err) => {
         console.log('GETTING COLOR THUMBNAILS IMAGES ERROR = ', err);
         cb(err, null);

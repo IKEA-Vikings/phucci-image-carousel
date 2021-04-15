@@ -15,6 +15,7 @@ class ImageService extends React.Component {
 
     this.state = {
       images: [],
+
       mobileView: false,
       carouselVisibility: 'hidden',
 

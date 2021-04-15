@@ -1,7 +1,9 @@
 .images-table {
   position: relative;
   top: 17vh;
-  left: 12vw;
+  /* left: 8vw; */
+  left: 4vw;
+
   display: flex;
   flex-flow: row wrap;
   overflow: hidden;
