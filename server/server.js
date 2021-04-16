@@ -37,13 +37,13 @@ app.get('/images/org/:id', (req, res) => {
 
 app.get('/images/sizeService/:id', (req, res) => {
   db.getSizeService(req.params.id)
-    .then((image) => res.send(image));
+    .then((images) => res.send(images));
 });
 
 
 app.get('/images/colors/:id', (req, res) => {
   db.getColors(req.params.id)
-    .then((image) => res.send(image));
+    .then((images) => res.send(images));
 });
 
 
