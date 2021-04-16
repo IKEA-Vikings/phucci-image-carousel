@@ -33,8 +33,6 @@ const generateColorsImages = (productId) => {
   let filteredData = require('./../seeding-script/seeder').filterData();
   let [min, max] = findSimilarTypeIds(productId);
 
-  let colorsId = Math.floor(Math.random() * (max - min) + min) - 1;
-
   for (let i = 0; i < 4; i++) {
     let colorsId = Math.floor(Math.random() * (max - min) + min) - 1;
     colorsId = (colorsId + i) < max ? colorsId += i : colorsId -= (i - 4);
