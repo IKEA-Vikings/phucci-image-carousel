@@ -1,13 +1,8 @@
 # Project Name
+Ikea's image micro-service
 
 > Project description
-
-## Related Projects
-
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+Displaying an image carousel and provides images source to other micro-services
 
 ## Table of Contents
 
@@ -113,4 +108,3 @@ npm install -g webpack
 npm install
 ```
 
- 
