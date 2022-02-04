@@ -6,10 +6,15 @@ Displaying an image carousel and provides images source to other micro-services
 
 ## Related Projects
 > https://github.com/IKEA-Vikings/phucci-proxy
+
 > https://github.com/IKEA-Vikings/vbao-product-size
+
 > https://github.com/IKEA-Vikings/vbao-others-also-viewed
+
 > https://github.com/IKEA-Vikings/kim-service-1
+
 > https://github.com/IKEA-Vikings/josh-service-reviews
+
 
 ## Table of Contents
 
