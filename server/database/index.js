@@ -1,7 +1,7 @@
 const Promise = require('bluebird');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://54.67.28.46:27017/images', {
+mongoose.connect('mongodb://localhost:27017/imagesDemo', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

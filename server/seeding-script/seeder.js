@@ -82,7 +82,7 @@ const filterData = () => {
   return filteredData;
 };
 
-let seedData = (cb) => ImageModel.insertMany(s3Data)
+let seedData = (cb) => ImageModel.insertMany(filterData())
   .then((seededData) => cb(null, seededData))
   .catch((err) => cb(err, null));
 
