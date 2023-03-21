@@ -34,9 +34,9 @@ Displaying an image carousel and provides images source to other micro-services
   ```JSON
   {
     "regular": [
-      'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img7.jpg',
-      'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img8.jpg',
-      'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img9.jpg'
+      "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img7.jpg",
+      "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img8.jpg",
+      "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img9.jpg"
     ],
   }
   ```
@@ -46,9 +46,9 @@ Displaying an image carousel and provides images source to other micro-services
   ```JSON
   {
     "large": [
-      'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img4.jpg',
-      'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img5.jpg',
-      'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img6.jpg'
+      "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img4.jpg",
+      "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img5.jpg",
+      "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img6.jpg"
     ],
   }
   ```
@@ -59,11 +59,11 @@ Displaying an image carousel and provides images source to other micro-services
     ```JSON
       {
         "colors": [
-        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img10.jpg',
-        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img11.jpg',
-        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img12.jpg',
-        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img13.jpg',
-        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img14.jpg',
+        "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img10.jpg",
+        "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img11.jpg",
+        "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img12.jpg",
+        "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img13.jpg",
+        "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img14.jpg",
         ],
       }
     ```
@@ -73,7 +73,7 @@ Displaying an image carousel and provides images source to other micro-services
   ```JSON
     {
       "sizeService": [
-        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img24.jpg'
+        "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img24.jpg"
       ]
     }
   ```
@@ -86,7 +86,7 @@ Displaying an image carousel and provides images source to other micro-services
     ```JSON
       {
         "largeThumbnails": [
-          'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img25.jpg'
+          "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img25.jpg"
         ],
       }
     ```
@@ -97,7 +97,7 @@ Displaying an image carousel and provides images source to other micro-services
     ```JSON
     {
       "mediumThumbnails": [
-        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img26.jpg'
+        "https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img26.jpg"
       ],
     }
     ```
