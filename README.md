@@ -4,6 +4,14 @@ Ikea's image micro-service
 > Project description
 Displaying an image carousel and provides images source to other micro-services
 
+[![Watch the video](https://i.imgur.com/pmCWL8s.png)](https://drive.google.com/file/d/1clxczrx_AeUCkR0XrMiDyBJDVpqwz4O9/view?usp=share_link)
+<a href="https://imgur.com/DExXTI7"><img src="https://i.imgur.com/DExXTI7.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/cWwap3y"><img src="https://i.imgur.com/cWwap3y.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/6pnFXoa"><img src="https://i.imgur.com/6pnFXoa.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/FbLjVu4"><img src="https://i.imgur.com/FbLjVu4.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/FiK7FSL"><img src="https://i.imgur.com/FiK7FSL.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/sYgT017"><img src="https://i.imgur.com/sYgT017.png" title="source: imgur.com" /></a>
+
 ## Related Projects
 > https://github.com/IKEA-Vikings/phucci-proxy
 
