@@ -34,9 +34,9 @@ Displaying an image carousel and provides images source to other micro-services
   ```JSON
   {
     "regular": [
-      "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723091_pe733853_s5.jpg?f=xxs",
-      "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723093_pe733855_s5.jpg?f=xxs",
-      "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723092_pe733856_s5.jpg?f=xxs"
+      'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img7.jpg',
+      'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img8.jpg',
+      'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img9.jpg'
     ],
   }
   ```
@@ -46,22 +46,24 @@ Displaying an image carousel and provides images source to other micro-services
   ```JSON
   {
     "large": [
-      "https://www.ikea.com/us/en/images/products/aina-cushion-cover-beige__0569582_pe665973_s5.jpg?f=s",
-      "https://www.ikea.com/us/en/images/products/aina-cushion-cover-beige__0569583_pe665975_s5.jpg?f=s",
-      "https://www.ikea.com/us/en/images/products/aina-cushion-cover-beige__0889590_pe672869_s5.jpg?f=s",
-      "https://www.ikea.com/us/en/images/products/aina-cushion-cover-beige__0889588_pe665974_s5.jpg?f=s"
+      'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img4.jpg',
+      'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img5.jpg',
+      'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img6.jpg'
     ],
   }
   ```
 
   - For tiny images used on:
-    * "Colors" under "About" section
+    * "Other Colors" under "About" section
     -> GET api/images/thumnail/colors/:productId
     ```JSON
       {
         "colors": [
-          "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723091_pe733853_s5.jpg?f=xu",
-          "https://www.ikea.com/us/en/images/products/koelax-bedspread-gray__0723085_pe733849_s5.jpg?f=xu"
+        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img10.jpg',
+        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img11.jpg',
+        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img12.jpg',
+        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img13.jpg',
+        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img14.jpg',
         ],
       }
     ```
@@ -71,7 +73,7 @@ Displaying an image carousel and provides images source to other micro-services
   ```JSON
     {
       "sizeService": [
-         "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723091_pe733853_s5.jpg?f=xs"
+        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img24.jpg'
       ]
     }
   ```
@@ -84,8 +86,7 @@ Displaying an image carousel and provides images source to other micro-services
     ```JSON
       {
         "largeThumbnails": [
-          "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723091_pe733853_s5.jpg?f=xxxs",
-          "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723092_pe733856_s5.jpg?f=xxxs"
+          'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img25.jpg'
         ],
       }
     ```
@@ -96,8 +97,7 @@ Displaying an image carousel and provides images source to other micro-services
     ```JSON
     {
       "mediumThumbnails": [
-        "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723091_pe733853_s5.jpg?f=u",
-        "https://www.ikea.com/us/en/images/products/koelax-bedspread-dark-green__0723092_pe733856_s5.jpg?f=u"
+        'https://ikea-clone-image-service.s3.us-west-1.amazonaws.com/img26.jpg'
       ],
     }
     ```
